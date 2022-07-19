@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+#datecontainer {
+    width: 180px;
+    border: 1px solid;
+    border-radius: 120px;
+    height: 180px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="datecontainer">
+            <span id="date"></span>
+            <span id="day"></span>
+            <div id="time"></div>
+            <div id="dayofweek"></div>
+        </div>
+    </body>
+    <script>
+        var date = document.getElementById("date");
+        var time = document.getElementById("time");
+        var day = document.getElementById("day");
+        var dayofweek = document.getElementById("dayofweek");
+        
+        var dateobj = new Date();
+        var monthobj = dateobj.toLocaleString('default', { month: 'long' });
+        var dayobj = dateobj.getUTCDate();
+        var timeobj = dateobj.toLocaleTimeString();
+        var dayofweekobj = dateobj.toLocaleString("en", { weekday: "long" })
+
+        date.innerHTML = monthobj;
+        day.innerHTML = dayobj;
+        time.innerHTML = timeobj;
+        dayofweek.innerHTML = dayofweekobj;
+
+    </script>
+</html>
